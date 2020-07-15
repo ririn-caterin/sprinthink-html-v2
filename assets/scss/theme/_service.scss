@@ -1,0 +1,194 @@
+.service {
+	&-item {
+		background-color: #FFF;
+		border-radius: 10px;
+		padding: 58px 38px 38px;
+		margin-bottom: 30px;
+		height: calc(100% - 30px);
+
+		img {
+			width: 78px;
+			height: 78px;
+			object-fit: contain;
+			margin-bottom: 40px;
+		}
+
+		&--big {
+			padding: 53px 60px 44px;
+
+			img {
+				width: 132px;
+				height: 132px
+			}
+		}
+	}
+
+	&-title {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+
+	&-heading {
+		font-size: 25px;
+		font-weight: 700;
+		line-height: 35px;
+		margin-bottom: 20px;
+	}
+
+	&-desc {
+		margin-bottom: 18px;
+	}
+
+	@media (max-width: 767px) {
+		&-item {
+			padding: 40px 30px 30px;
+			margin: 0 0 25px;
+			height: auto;
+
+			img {
+				width: 60px;
+				height: 60px;
+				margin-bottom: 20px;
+			}
+		}
+
+		&-title {
+			font-size: 16px;
+		}
+
+		&-heading {
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+}
+
+/*Section Service on Homepage*/
+/*---------------*/
+@media (min-width: 768px) {
+	.section-service {
+		.section-title {
+			margin-bottom: 70px;
+		}
+	}
+}
+
+/*Section Results on CIL*/
+/*---------------*/
+.section-results {
+	.service {
+		&-item img {
+			width: 48px;
+			height: 48px;
+			margin: 0 auto 24px;
+		}
+
+		&-title {
+			font-weight: 700;
+		}
+
+		&-desc {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+
+	@media (min-width: 768px) {
+		.section-title {
+			font-size: 30px;
+			line-height: 37px;
+			margin-bottom: 45px;
+		}
+
+		.service-item {
+			padding: 28px 38px;
+		}
+
+		.service-title {
+			line-height: 24px;
+			margin-bottom: 24px;
+		}
+	}
+}
+
+/*Section Manage Service*/
+/*---------------*/
+.manage-service {
+	.section-title,
+	.section-subtitle {
+		margin-bottom: 28px;
+	}
+
+	.post {
+		margin-bottom: 0;
+		padding: 305px 55px 34px 32px;
+		box-shadow: 0 3px 6px rgba(#000, .16);
+		height: 100%;
+		
+		&-title {
+			margin-bottom: 16px;
+		}
+
+		&-text {
+			font-size: 14px;
+			margin-bottom: 16px;
+		}
+
+		&-img {
+			height: 280px;
+			border-radius: 10px 10px 0 0;
+		}
+	}
+
+	@media (min-width: 768px) {
+		.section-btn {
+			margin-bottom: 50px;
+
+			.btn {
+				font-size: 16px;
+				line-height: 18px;
+				padding: 15px 33px;
+			}
+		}
+
+		.post {
+			&-title {
+				font-size: 25px;
+				line-height: 30px;
+			}
+		}
+	}
+
+	@media (max-width: 767px) {
+		.section-title,
+		.section-subtitle {
+			margin-bottom: 20px;
+		}
+
+		.section-btn {
+			margin-bottom: 25px;
+		}
+
+		.post {
+			padding: 225px 25px 25px;
+			margin-bottom: 25px;
+			height: auto;
+
+			&-img {
+				height: 200px;
+			}
+		}
+	}
+}
+
+/*Section Our Service on About Page*/
+/*---------------*/
+.section-ourservices {
+	.section-title {
+		margin-bottom: 15px;
+	}
+
+	.section-subheading {
+		margin-bottom: 30px;
+	}
+}

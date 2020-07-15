@@ -1,0 +1,55 @@
+.inline-socmed {
+	svg,
+	img {
+		height: 24px;
+		max-width: 30px;
+		object-fit: contain;
+	}
+}
+
+.footer {
+	padding: 84px 0;
+
+	&-copyright {
+		font-weight: 700;
+		font-size: 16px;
+		letter-spacing: .4px;
+		color: #959390;
+		text-align: center;
+	}
+
+	&-socmed {
+		text-align: right;
+
+		li {
+			margin-left: 32px;
+		}
+
+		* {
+			fill: $color-primary;
+		}
+	}
+
+	@media (max-width: 767px) {
+		padding: 40px 0;
+
+		&-img img {
+			max-height: 40px;
+			max-width: 136px;
+		}
+
+		&-copyright {
+			font-size: 14px;
+			margin: 20px auto;
+			text-align: left;
+		}
+
+		&-socmed {
+			text-align: left;
+
+			li {
+				margin: 0 20px 0 0;
+			}
+		}
+	}
+}

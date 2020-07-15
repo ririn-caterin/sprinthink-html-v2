@@ -1,0 +1,63 @@
+/*Logo and description*/
+/*------------------------*/
+.about {
+	&-box {
+		margin-bottom: 30px;
+		height: calc(100% - 30px);
+	}
+
+	&-img {
+		background-color: $color-tertiary;
+		padding: 32px;
+	}
+
+	&-desc {
+		padding: 72px 42px;
+	}
+
+	@media (max-width: 767px) {
+		&-box {
+			margin-bottom: 25px;
+			height: auto;
+		}
+
+		&-img img {
+			max-height: 92px;
+		}
+
+		&-desc {
+			padding: 35px 25px 20px;
+		}
+	}
+}
+
+.section-about {
+	padding-bottom: 40px;
+
+	@media (max-width: 767px) {
+		padding-bottom: 0;
+	}
+}
+
+/*Vision and Mission*/
+/*------------------------*/
+.section-vision {
+	.section-title {
+		margin-bottom: 36px;
+	}
+
+	.section-desc {
+		max-width: 400px;
+		margin: auto;
+	}
+
+	@media (max-width: 767px) {
+		.section-title {
+			margin-bottom: 20px;
+		}
+
+		.section-desc {
+			margin-bottom: 40px;
+		}
+	}
+}

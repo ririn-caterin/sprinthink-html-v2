@@ -1,0 +1,15 @@
+.section-journey {
+	margin-top: 30px;
+
+	&--v2 {
+		margin: 0 auto 92px;
+	}
+
+	@media (max-width: 767px) {
+		margin-top: 50px;
+
+		&--v2 {
+			margin-bottom: 50px;
+		}
+	}
+}

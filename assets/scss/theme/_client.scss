@@ -1,0 +1,233 @@
+.client {
+	/*Client Logo*/
+	/*--------------*/
+	&-logo {
+		text-align: center;
+		margin: 15px 0;
+
+		a {
+			display: inline-block;
+			transition: all ease .3s;
+
+			&:hover {
+				opacity: .8;
+			}
+		}
+
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			margin-top: 60px;
+		}
+
+		img {
+			object-fit: contain;
+			max-height: 50px;
+			max-width: 100px;
+		}
+
+		@media (min-width: 992px) {
+			min-width: calc(100% / 6);
+			margin: 26px 0;
+
+			img {
+				max-height: 74px;
+				max-width: 154px;
+			}
+		}
+
+		@media (max-width: 767px) {
+			margin: 0;
+
+			&__list {
+				margin-top: 30px;
+			}
+		}
+	}
+
+	/*Client Testimonial*/
+	/*--------------*/
+	&-testi {
+		outline: 0;
+
+		&__content {
+			font-size: 18px;
+			text-align: center;
+
+			p {
+				margin-bottom: 22px;
+			}
+		}
+
+		&__img {
+			min-width: 86px;
+			width: 86px;
+			height: 86px;
+			border-radius: 100%;
+			margin-right: 20px;
+			overflow: hidden;
+			background-color: $bg-gray;
+		}
+
+		&__name {
+			font-weight: 700;
+			color: #00647F;
+		}
+
+		&__position {
+			font-weight: 600;
+			font-size: 14px;
+		}
+
+		&__list {
+			max-width: 570px;
+			margin: 84px auto 0;
+
+			@media (min-width: 992px) {
+				.slick-prev {
+					left: -125px;
+				}
+
+				.slick-next {
+					right: -125px;
+				}
+			}
+		}
+
+		@media (max-width: 767px) {
+			&__content {
+				font-size: 14px;
+				line-height: 24px;
+			}
+
+			&__img {
+				width: 60px;
+				height: 60px;
+				min-width: 60px;
+				margin-right: 15px;
+			}
+
+			&__name,
+			&__position {
+				font-size: 12px;
+				line-height: 18px;
+			}
+
+			&__list {
+				max-width: 250px;
+				margin: 60px auto 0;
+			}
+		}
+	}
+
+	/*Client Case*/
+	/*--------------*/
+	&-case {
+		max-width: 848px;
+		margin: 0 auto 92px;
+
+		.section-subtitle {
+			margin-bottom: 22px;
+		}
+
+		&__text {
+			margin-bottom: 24px;
+		}
+
+		&__more {
+			margin-top: 15px;
+
+			a {
+				color: $color-primary;
+				font-size: 20px;
+				letter-spacing: .4px;
+				font-weight: 700;
+			}
+
+			img {
+				width: 10px;
+				margin-left: 5px;
+			}
+		}
+
+		&--box {
+			max-width: 100%;
+			margin-bottom: 0;
+
+			.section-heading {
+				margin-bottom: 50px;
+			}
+		}
+
+		@media (min-width: 768px) {
+			.section-title {
+				font-size: 30px;
+				line-height: 40px;
+				margin-bottom: 24px;
+			}
+
+			&--box {
+				.service-item {
+					padding: 45px 38px 36px;
+				}
+
+				.service-desc {
+					font-size: 18px;
+					margin-bottom: 35px;
+				}
+			}
+		}
+
+		@media (max-width: 767px) {
+			&--box {
+				.section-heading {
+					margin-bottom: 25px;
+				}
+			}
+
+			&__more {
+				margin: 0;
+
+				a {
+					font-size: 16px;
+				}
+
+				img {
+					width: 6px;
+				}
+			}
+		}
+	}
+
+	/*Client Logo and Testimonial*/
+	/*--------------*/
+	&-logotesti {
+		margin-bottom: 78px;
+		padding-top: 60px;
+
+		.client-logo__list {
+			margin: 0 0 78px;
+		}
+
+		.section-title {
+			margin-bottom: 15px;
+		}
+
+		.client-testi__list {
+			margin-top: 30px;
+		}
+
+		@media (min-width: 768px) {
+			.section-title {
+				font-size: 36px;
+				line-height: 44px;
+			}
+
+			.client-testi__list {
+				margin-top: 48px;
+			}
+		}
+	}
+}

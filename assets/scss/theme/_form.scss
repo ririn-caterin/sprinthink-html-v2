@@ -1,0 +1,60 @@
+.form {
+	line-height: 16px;
+
+	textarea.form-input {
+		border-radius: 20px;
+		padding: 20px 18px;
+	}
+
+	label {
+		display: block;
+		margin-bottom: 6px;
+		font-weight: 500;
+		font-size: 14px;
+	}
+
+	select {
+	    -webkit-appearance: none;
+    	-moz-appearance: none;
+    	background-image: url('./../icons/angle-down.svg');
+    	background-repeat: no-repeat;
+		background-position-y: center;
+		background-position-x: calc(100% - 10px);
+		background-size: 10px;
+		padding-right: 30px;
+	}
+
+	&-input {
+		background-color: #FFF;
+		border: 1px solid #B8B8B8;
+		border-radius: 32px;
+		width: 100%;
+		font-size: 12px;
+		padding: 6px 15px;
+		outline: 0;
+
+		&::placeholder {
+			color: #B7B7B7;
+		}
+
+		&:focus {
+			border-color: $color-primary;
+		}
+	}
+
+	&-control {
+		position: relative;
+		margin-bottom: 20px;
+	}
+
+	&-info {
+		font-size: 13px;
+		margin-bottom: 10px;
+		font-weight: 500;
+	}
+
+	.btn {
+		font-size: 13px;
+		padding: 9px;
+	}
+}

@@ -1,0 +1,111 @@
+.custom-slider {
+	.slick-prev,
+	.slick-next {
+		height: 36px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+
+		&:before {
+			display: none;
+		}
+	}
+
+	.slick-prev {
+		background-image: url('./../icons/angle-left.png');
+		left: -30px;
+	}
+
+	.slick-next {
+		background-image: url('./../icons/angle-right.png');
+		right: -30px;
+	}
+
+	@media (min-width: 1190px) {
+		.slick-prev {
+			left: -94px;
+		}
+
+		.slick-next {
+			right: -94px;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.slick-dots {
+			bottom: -30px;
+		}
+
+		.slick-prev,
+		.slick-next {
+			top: auto;
+			bottom: 40px;
+			height: 15px;
+		}
+
+		.slick-prev {
+			left: -25px;
+		}
+
+		.slick-next {
+			right: -25px;
+		}
+	}
+}
+
+.bg-gray .slick-dots li button:before {color: #FFF;}
+
+.slick-dots li {
+	margin: 0;
+
+	button:before {
+		font-size: 10px;
+		opacity: 1;
+		color: $bg-gray;
+	}
+
+	&.slick-active button:before {
+		color: $color-primary;
+	}
+}
+
+/*Image Slider*/
+/*--------------------*/
+.img-slider {
+	&__item {
+		margin: 0 25px;
+		height: 284px;
+	}
+
+	.slick-list {
+		margin: 0 -25px;
+	}
+
+	@media (max-width: 991px) {
+		max-width: 80vw;
+		margin: 0 auto;
+	}
+
+	@media (max-width: 767px) {
+		&__item {
+			height: 190px;
+		}
+	}
+}
+
+/*Section Client Logo Slider and Image Slider on Innovation Management*/
+/*--------------------*/
+.slider-logoimage {
+	padding: 60px 0 80px;
+
+	.client-logo__list {
+		margin-top: 0;
+		margin-bottom: 100px;
+	}
+
+	@media (max-width: 767px) {
+		.client-logo__list {
+			margin-bottom: 50px;
+		}
+	}
+}

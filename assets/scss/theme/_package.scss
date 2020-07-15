@@ -1,0 +1,90 @@
+.package {
+	.section-title,
+	.section-subtitle {
+		margin-bottom: 28px;
+	}
+
+	&-title {
+		font-size: 25px;
+		line-height: 30px;
+		color: #FFF;
+		background-color: $color-primary;
+		padding: 22px 30px;
+		margin: 0;
+	}
+
+	&-desc {
+		font-size: 12px;
+		line-height: 18px;
+		margin-bottom: 20px;
+	}
+
+	&-row {
+		font-size: 12px;
+		line-height: 15px;
+		border-bottom: 1px solid #707070;
+		padding: 15px 0;
+
+		&:last-child {
+			border-bottom: 0;
+		}
+
+		img {
+			max-width: 24px;
+			max-height: 24px;
+			object-fit: contain;
+			margin-right: 12px;
+		}
+	}
+
+	&-info {
+		margin-bottom: 12px;
+	}
+
+	&-item {
+		border-radius: 10px;
+		overflow: hidden;
+		height: 100%;
+	}
+
+	&-list {
+		margin-top: 50px;
+	}
+
+	&-inside {
+		padding: 30px 24px;
+
+	}
+
+	@media (min-width: 768px) {
+		.section-btn .btn {
+			font-size: 16px;
+			padding: 12px 33px;
+	    	line-height: 24px;
+		}
+	}
+
+	@media (max-width: 991px) {
+		&-item {
+			margin-bottom: 25px;
+			height: auto;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.section-title,
+		.section-subtitle {
+			margin-bottom: 20px;
+		}
+
+		&-list {
+			margin-top: 30px;
+		}
+
+		&-title {
+			font-size: 18px;
+			line-height: 24px;
+			padding: 15px;
+		}
+	}
+}

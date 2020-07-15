@@ -1,0 +1,193 @@
+.contact {
+	&-form {
+		padding: 35px 50px;
+		border-radius: 10px;
+
+		@media (max-width: 767px) {
+			padding: 25px;
+		}
+	}
+
+	&-touch {
+		.section-subtitle {
+			max-width: 400px;
+		}
+
+		img {
+			margin-bottom: 20px;
+		}
+
+		@media (max-width: 767px) {
+			img {
+				max-width: 215px;
+				margin-bottom: 30px;
+			}
+
+			.section-title {
+				margin-bottom: 20px;
+			}
+		}
+
+		/*long variant*/
+		/*---------------*/
+		&__title {
+			font-weight: 700;
+			font-size: 33px;
+			line-height: 40px;
+			margin-bottom: 16px;
+		}
+
+		&__subtitle {
+			font-size: 12px;
+			line-height: 18px;
+			margin-bottom: 16px;
+			max-width: 344px;
+		}
+
+		&--long {
+			padding: 28px 57px;
+			border-radius: 10px;
+			text-align: left;
+			max-width: 762px;
+			margin: 0 auto;
+
+			img {
+				max-width: 200px;
+			}
+		}
+
+		@media (max-width: 767px) {
+			&__title {
+				font-size: 22px;
+				line-height: 30px;
+			}
+
+			&--long {
+				flex-wrap: wrap;
+				padding: 25px;
+				text-align: center;
+
+				img {
+					order: 1;
+					margin: 0 auto 25px;
+				}
+
+				.contact-touch__info {
+					order: 2;
+				}
+			}
+		}
+	}
+
+
+	
+	/*Contact Page*/
+	/*-----------------*/
+	&-row {
+		margin-bottom: 40px;
+	}
+
+	&-detail {
+		font-size: 20px;
+		line-height: 28px
+	}
+
+	&-title {
+		margin-bottom: 8px;
+	}
+
+	&-info {
+		font-weight: 700;
+		letter-spacing: .5px;
+	}
+
+	&-socmed {
+		margin: 0 -30px;
+
+		li {
+			margin: 20px 30px 30px;
+		}
+
+		* {
+			fill: #000;
+		}
+	}
+
+	&-page {
+		.section-title {
+			font-size: 60px;
+			line-height: 72px;
+			margin-bottom: 28px;
+			letter-spacing: .4px;
+		}
+
+		&__desc {
+			max-width: 350px;
+			margin: 0 auto 50px;
+			letter-spacing: .4px;
+		}
+	}
+
+	@media (max-width: 991px) {
+		&-page {
+			.contact-form {
+				margin-bottom: 80px;
+			}
+
+			.contact-detail {
+				text-align: center;
+			}
+		}
+	}
+
+	@media (max-width: 767px) {
+		&-page {
+			.section-title {
+				font-size: 30px;
+				line-height: 36px;
+			}
+
+			.contact-detail {
+				font-size: 16px;
+			}
+
+			&__desc {
+				margin-bottom: 25px;
+			}
+		}
+
+		&-info {
+			font-size: 14px;
+			line-height: 24px;
+		}
+
+		&-row {
+			margin-bottom: 25px;
+		}
+
+		&-socmed li {
+			margin: 10px 15px;
+
+			* {
+				max-height: 30px;
+				max-width: 30px;
+			}
+		}
+	}
+}
+
+/*Section Contact*/
+/*-----------------*/
+.section-contact {
+	margin-bottom: 100px;
+
+	@media (max-width: 767px) {
+		margin-bottom: 80px;
+	}
+}
+
+/*Section Get In Touch*/
+/*-----------------*/
+.section-git {
+	padding: 15px 0 64px;
+}

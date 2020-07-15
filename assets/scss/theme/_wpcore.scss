@@ -1,0 +1,65 @@
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+  margin: 8px 24px 8px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 8px auto 8px auto;
+  max-width: 100%;
+
+  img {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.alignright {
+  float: right;
+  margin: 8px 0 8px 24px;
+  max-width: 100%;
+}
+
+.alignleft {
+  float: left;
+  margin: 8px 24px 8px 0;
+  max-width: 100%;
+}
+
+a img {
+  &.alignright {
+    float: right;
+    margin: 8px 0 24px 24px;
+  }
+  &.alignnone {
+    margin: 8px 24px 24px 0;
+  }
+
+  &.alignleft {
+    float: left;
+    margin: 8px 24px 24px 0;
+  }
+
+  &.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+  }
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, sans-serif;
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: 700;
+}

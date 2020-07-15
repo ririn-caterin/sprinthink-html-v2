@@ -1,0 +1,14 @@
+/* when admin-bar active*/
+body.customize-support {
+	header {
+		@media (min-width: 783px) {
+			top: 32px;
+		}
+
+		@media (max-width: 782px) {
+			&:not(.fixed) {
+				top: 46px;
+			}
+		}
+	}
+}

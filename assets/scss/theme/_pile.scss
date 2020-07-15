@@ -1,0 +1,43 @@
+.pile {
+	&-img {
+		min-width: calc(50% + 60px);
+	}
+
+	&-box {
+		min-width: calc(50% + 60px);
+		background-color: #FFF;
+		padding: 38px 30px 38px 54px;
+		margin-left: -120px;
+
+		.section-title {
+			text-align: left;
+			margin-bottom: 18px;
+		}
+
+		.section-desc {
+			margin-bottom: 18px;
+		}
+
+		@media (min-width: 768px) {
+			.btn {
+				padding: 9px 45px;
+			}
+		}
+	}
+
+	@media (max-width: 767px) {
+		&-wrapper {
+			flex-wrap: wrap;
+		}
+
+		&-img {
+			min-width: 100%;
+			width: 100%;
+		}
+
+		&-box {
+			padding: 25px;
+			margin: -50px 15px 0;
+		}
+	}
+}
