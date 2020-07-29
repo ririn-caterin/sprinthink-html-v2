@@ -73,13 +73,18 @@
 		@media (min-width: 992px) {
 			display: flex;
 			margin: 0 -15px;
+
+			> li {
+				padding-bottom: 20px;
+				margin-bottom: -20px;
+			}
 		}
 
 		@media (min-width: 1200px) {
 			margin: 0 -25px;
 			
 			> li {
-				padding: 0 25px;
+				padding: 0 25px 20px;
 			}
 		}
 
@@ -111,8 +116,8 @@
 
 	    @media (min-width: 992px) {
 			position: absolute;
-		    left: 25px;
-		    top: calc(100% + 20px);
+		    left: 15px;
+		    top: 100%;
 		    background: #FFF;
 		    box-shadow: 0 3px 6px rgba(0, 0, 0, .1);
 		    font-size: 14px;
@@ -130,6 +135,10 @@
 			    	background-color: $bg-gray;
 			    }
 		    }
+	    }
+
+	    @media (min-width: 1200px) {
+			left: 25px;
 	    }
 
 	    @media (max-width: 991px) {

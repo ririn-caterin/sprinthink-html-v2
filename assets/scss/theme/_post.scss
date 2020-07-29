@@ -41,7 +41,8 @@
 		margin-right: -15px;
 
 		.post {
-			max-width: calc(33.333% - 30px);
+			min-width: calc(33.333% - 30px);
+			width: calc(33.333% - 30px);
 			margin: 0 15px 30px;
 		}
 	}
@@ -51,7 +52,8 @@
 		margin-right: -40px;
 
 		.post {
-			max-width: 266px;
+			min-width: 266px;
+			width: 266px;
 			margin: 0 40px 40px;
 		}
 	}
@@ -84,7 +86,7 @@
 		margin: 0 20px 34px;
 
 		&-title {
-			font-size: 14px;
+			font-size: 16px;
 			margin-bottom: 8px;
 		}
 
@@ -94,13 +96,12 @@
 		}
 
 		&-text {
-			font-size: 11px;
-			line-height: 14px;
+			font-size: 12px;
+			line-height: 20px;
 			margin-bottom: 12px;
 		}
 
 		.btn {
-			font-size: 9px;
 		    padding: 8px 15px;
 		    line-height: 12px;
 		}
