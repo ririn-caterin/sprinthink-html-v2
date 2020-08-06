@@ -89,6 +89,9 @@
             slidesToScroll: 1,
             dots: true,
             arrows: false,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 1000,
             responsive: [
                 {
                     breakpoint: 767,
@@ -111,4 +114,26 @@
             arrows: false
         });
     };
+
+    /* Add smooth scrolling to all links
+    --------------------- */
+    $(".btn-scroll").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+
+            if(checkWidth <=767){
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 60
+                }, 1500, function() {});
+            } else {
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 110
+                }, 1500, function() {
+
+                    // window.location.hash = hash;
+                });
+            }
+        }
+    });
 })(jQuery);

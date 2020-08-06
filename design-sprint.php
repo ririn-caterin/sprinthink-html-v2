@@ -11,7 +11,7 @@
 				<div class="pile-box box-shadow">
 					<h1 class="section-title">Design Sprint & Offline Training</h1>
 					<div class="section-desc">Nunc cursus magna vel elit auctor, id imperdiet turpis tristique. Morbi porta nisl a odio consequat luctus. Vestibulum nec sollicitudin nunc, et</div>
-					<a href="#" class="btn">Get in Touch</a>
+					<a href="#section-contact" class="btn btn-scroll">Get in Touch</a>
 				</div>
 			</div>
 		</div>
@@ -91,7 +91,7 @@
 		<!-- ./END - CLIENT CASE -->
 
 		<!-- ./START - GET IN TOUCH -->
-		<div class="section-contact">
+		<div class="section" id="section-contact">
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="contact-touch text-center">

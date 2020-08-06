@@ -11,7 +11,7 @@
 				<div class="pile-box box-shadow">
 					<h1 class="section-title">Training & Coaching</h1>
 					<div class="section-desc">Nunc cursus magna vel elit auctor, id imperdiet turpis tristique. Morbi porta nisl a odio consequat luctus. Vestibulum nec sollicitudin nunc, et</div>
-					<a href="#" class="btn">Choose a program</a>
+					<a href="#section-package" class="btn btn-scroll">Choose a program</a>
 				</div>
 			</div>
 		</div>
@@ -20,11 +20,11 @@
 
 	<!-- ./START - SELECT THE RIGHT APPROACH -->
 	<div class="container">
-		<div class="section package">
+		<div class="section package" id="section-package">
 			<h2 class="section-title section-title--full">Select the right approach</h2>
 			<div class="section-subtitle">Nunc cursus magna vel elit auctor, id imperdiet turpis tristique. Morbi porta nisl a odio consequat</div>
 			<div class="text-center section-btn">
-				<a href="#" class="btn">Consult with us</a>
+				<a href="#section-contact" class="btn btn-scroll">Consult with us</a>
 			</div>
 
 			<div class="package-list row">
@@ -119,7 +119,7 @@
 	
 	<div class="container">
 		<!-- ./START - GET IN TOUCH -->
-		<div class="section-contact">
+		<div class="section" id="section-contact">
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="contact-touch text-center">

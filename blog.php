@@ -50,6 +50,16 @@
 					</div>
 				<?php } ?>
 			</div>
+
+			<nav class="navigation pagination" role="navigation">
+			    <h2 class="screen-reader-text">Posts navigation</h2>
+			    <div class="nav-links"><span aria-current="page" class="page-numbers current">1</span>
+			        <a class="page-numbers" href="#">2</a>
+			        <a class="page-numbers" href="#">3</a>
+			        <a class="page-numbers" href="#">4</a>
+			        <a class="next page-numbers" href="#">Next</a>
+			    </div>
+			</nav>
 		</div>
 		<!-- ./END - LIST POST -->
 	</div>

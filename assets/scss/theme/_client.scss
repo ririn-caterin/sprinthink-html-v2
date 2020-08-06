@@ -58,6 +58,7 @@
 
 			p {
 				margin-bottom: 22px;
+				line-height: 30px;
 			}
 		}
 
@@ -84,6 +85,11 @@
 		&__list {
 			max-width: 570px;
 			margin: 84px auto 0;
+
+			.slick-track {
+				display: flex;
+				align-items: center;
+			}
 
 			@media (min-width: 992px) {
 				.slick-prev {
@@ -118,6 +124,12 @@
 			&__list {
 				max-width: 250px;
 				margin: 60px auto 0;
+
+				.slick-prev,
+				.slick-next {
+					top: 50%;
+					bottom: auto;
+				}
 			}
 		}
 	}
@@ -126,7 +138,7 @@
 	/*--------------*/
 	&-case {
 		max-width: 848px;
-		margin: 0 auto 92px;
+		margin: 0 auto;
 
 		.section-subtitle {
 			margin-bottom: 22px;
@@ -155,6 +167,7 @@
 		&--box {
 			max-width: 100%;
 			margin-bottom: 0;
+			padding-bottom: 0;
 
 			.section-heading {
 				margin-bottom: 50px;
@@ -204,7 +217,6 @@
 	/*Client Logo and Testimonial*/
 	/*--------------*/
 	&-logotesti {
-		margin-bottom: 78px;
 		padding-top: 60px;
 
 		.client-logo__list {
